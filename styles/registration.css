@@ -74,7 +74,7 @@ body {
     padding:5em;
     margin: 1em 2em;
     border-radius:8px;
-    transition:300ms ease-in-out
+    transition:300ms ease-in-out;
 }
 
 .registration-main-container:hover {
