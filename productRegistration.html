@@ -13,16 +13,16 @@
         <h1 class="ml-5">Product registration</h1>
         <form class="border p-5 m-5 bg-light">
             <div class="mb-3">
-                <label class="form-label" for="" name="productName">Name</label>
-                <input class="form-control" text="">
+                <label class="form-label" for="">Name</label>
+                <input class="form-control" text="" name="productName">
             </div>
              <div class="mb-3">
-                <label class="form-label" for="" name="productPrice">Price</label>
-                <input class="form-control" type="number">
+                <label class="form-label" for="">Price</label>
+                <input class="form-control" type="number" name="productPrice">
             </div>
              <div class="mb-3">
-                <label class="form-label" for="" name="productCategory">Category</label>
-                <select class="form-select">
+                <label class="form-label" for="">Category</label>
+                <select class="form-select" name="productCategory">
                     <option value=""></option>
                     <option value="electronics">Electronics</option>
                     <option value="electronics">Electronics</option>
@@ -30,7 +30,7 @@
                 </select>
             </div>
             <div class="d-flex justify-content-end">
-            <button class="btn btn-primary m-1" type="submit">Register</button>
+            <button  onclick="registerProduct(event)" class="btn btn-primary m-1" type="submit">Register</button>
             </div>
         </form>
 
