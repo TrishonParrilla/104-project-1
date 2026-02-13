@@ -8,7 +8,7 @@ let pet1 = {
 }
 
 let pet2 = {
-    Name: "ash",
+    Name: "ash", 
     Age: "",
     Gender: "",
     Service: "",
@@ -62,18 +62,23 @@ function petRegister(event) {
 
 
 // const newPet = new registration(name, age, breed, gender, service); // deal w this in function to get info from form
+let tableBody = document.getElementById("table-body");
 function displayRow(registration) {
-    let tableBody = document.getElementById("table-body");
-    let tableCreate = document.createElement("tr");
+    const tableCreate = document.createElement("tr");
     tableCreate.innerHTML += `
                             <td scope ="row">${registration.name}</td>
                             <td scope ="row">${registration.age}</td>
                             <td scope ="row">${registration.service}</td>
-                             <td scope ="row">${registration.gender}</td>
+                            <td scope ="row">${registration.gender}</td>
                             <td scope ="row">${registration.breed}</td>
-                            <td scope ="row"><button class="btn btn-danger onclick="deletePet()">Delete</button></td>
-                            `;
+                            <td scope ="row"><button class="btn btn-danger type="button" onclick="deletePet()">Delete</button></td>
+                             `;
     tableBody.appendChild(tableCreate);
 }
-
-
+function deletePet() {
+    let tableBody = document.getElementById("table-body");
+    if(tableBody != "") { // if tableBody is not holding the value of an empty string
+        tableBody.deleteRow(-1); // takes an index where it specifically targets and deletes the last row
+    }
+   
+}
