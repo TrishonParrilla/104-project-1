@@ -2,6 +2,7 @@
 
 const productForm = document.querySelector("form"); //search for the html element
 
+const body = document.getElementById("body");
 // Define the constructor
 function Product(name, price, category) {
     this.name = name;
@@ -23,9 +24,25 @@ function registerProduct(event) {
     const newProduct = new Product(name, price, category);
     console.log(newProduct);
 
-    //use the information to create a row on the table
+    const row = displayRow(newProduct);
+    body.appendChild(row);
 }
 
-function displayRow(){
+function displayRow(newProduct) {
+    //use the information to create a row on the table
+    const row = document.createElement("tr");
+    row.innerHTML = `
+    <td>${newProduct.name}</td>
+    <td>${newProduct.price}</td>
+    <td>${newProduct.category}</td>
+    <td> <button class="btn btn-danger">Delete</td>
     
+    
+    
+    `;
+    return row;
+
 }
+
+// move this folder to practice later
+

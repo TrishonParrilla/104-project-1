@@ -14,4 +14,4 @@ function displaySalonInfo() {       //display about info to html function
     console.log(aboutUsSection);
     
 }
-displaySalonInfo();
+displaySalonInfo() 

@@ -44,3 +44,36 @@ for (petnames of petsList){
     ol.appendChild(li);
 }
 
+// TODO- make a function to grab .value information from the form 
+
+function petRegister(event) {
+    const petForm = document.querySelector("form"); // needs to be declared in function
+    event.preventDefault();
+    const name = petForm.elements["name-input"].value;
+    const age = petForm.elements["age-input"].value;
+    const breed = petForm.elements["breed-input"].value;
+    const gender = petForm.elements["gender-input"].value;
+    const service = petForm.elements["service-input"].value;
+
+    const newPet = new registration(name, age, breed, gender, service);
+    const row = displayRow(newPet);
+        
+}
+
+
+// const newPet = new registration(name, age, breed, gender, service); // deal w this in function to get info from form
+function displayRow(registration) {
+    let tableBody = document.getElementById("table-body");
+    let tableCreate = document.createElement("tr");
+    tableCreate.innerHTML += `
+                            <td scope ="row">${registration.name}</td>
+                            <td scope ="row">${registration.age}</td>
+                            <td scope ="row">${registration.service}</td>
+                             <td scope ="row">${registration.gender}</td>
+                            <td scope ="row">${registration.breed}</td>
+                            <td scope ="row"><button class="btn btn-danger onclick="deletePet()">Delete</button></td>
+                            `;
+    tableBody.appendChild(tableCreate);
+}
+
+

@@ -89,3 +89,13 @@ body {
     background-color:#2cbbc3;
     font-family:"Montserrat",sans-serif;
 }
+
+.btn {
+    transition: 300ms ease-in-out;
+}
+
+.btn:hover {
+    transform:translateY(-2px);
+    box-shadow: 3px 3px 8px black;
+    
+}
