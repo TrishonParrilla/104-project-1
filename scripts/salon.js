@@ -11,7 +11,5 @@ function displaySalonInfo() {       //display about info to html function
     let salonInfo = document.createElement("p");
     salonInfo.innerHTML = `Welcome to ${salon.name} You can find us at ${salon.address}! We're open ${salon.hours}. You can contact us at ${salon.phone} `
     aboutUsSection.appendChild(salonInfo);
-    console.log(aboutUsSection);
-    
 }
-displaySalonInfo() 
+displaySalonInfo();
