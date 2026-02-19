@@ -83,14 +83,3 @@ body {
     transform:translateY(-5px)
 
 }*/
-
-
-body {
-    background-color:#fefae0;
-    font-family:"Montserrat",sans-serif;
-}
-
-.btn {
-    transition: 300ms ease-in-out;
-}
-
