@@ -2,6 +2,12 @@ $("#servicesForm").submit(function(event) {
     event.preventDefault();
     console.log(event);
 
+function Service(name, description, price){
+    this.name = name;
+    this.description=description;
+    this.price = price;
+}
+
     //get value of input field
     const name = $("#serviceName").val().trim();
     const description = $("#serviceDescription").val().trim();
@@ -39,7 +45,14 @@ $("#servicesForm").submit(function(event) {
     this.reset();
 });
 
+$("#cancel-button").click(function(event)
+{   
+    event.preventDefault();
+    $("#servicePrice").css("border","");
+    $("#serviceDescription").css("border","");
+    $("#serviceName").css("border","");
 
+})
 //darkmode
 
 $("#changeModeButton").click(function(){
