@@ -1,12 +1,14 @@
+function Service(name, description, price){
+    this.name = name;
+    this.description = description;
+    this.price = price;
+}
+
 $("#servicesForm").submit(function(event) {
     event.preventDefault();
     console.log(event);
 
-function Service(name, description, price){
-    this.name = name;
-    this.description=description;
-    this.price = price;
-}
+
 
     //get value of input field
     const name = $("#serviceName").val().trim();
@@ -43,6 +45,10 @@ function Service(name, description, price){
 
     }
     this.reset();
+    let service1 = new Service(name, description, price);
+    console.log(service1)
+
+
 });
 
 $("#cancel-button").click(function(event)
