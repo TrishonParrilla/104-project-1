@@ -1,5 +1,5 @@
 
-*/*{
+/*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -82,4 +82,4 @@ body {
     box-shadow: 3px 4px 10px black;
     transform:translateY(-5px)
 
-}*/
+}*/ 

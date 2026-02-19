@@ -1,0 +1,23 @@
+
+/* default mode - light (Dark color thing #855729) */
+:root{
+    --background-color:#e3ccb6;
+    --title-color:black;
+    
+}
+
+body {
+    background-color:var(--background-color);
+    transition:400ms ease-in-out;
+    font-family:"Lato",sans-serif;
+}
+
+h2 {
+    color:var(--title-color);
+}
+
+.dark-mode {
+    --background-color: #8b6b4f;
+    --title-color: #e8d5c4;
+    
+}
