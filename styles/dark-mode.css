@@ -2,22 +2,47 @@
 /* default mode - light (Dark color thing #855729) */
 :root{
     --background-color:#e3ccb6;
-    --title-color:black;
+    --flex-container-light:#f5e6d3;
+    --regular-div-button:#d4a373;
+    --text-color-dark-mode: #d4c4b0; 
+    
+
     
 }
 
 body {
     background-color:var(--background-color);
-    transition:400ms ease-in-out;
+    transition:background 400ms ease-in-out;
     font-family:"Lato",sans-serif;
+    color:var(--text-color);
+}
+#changeModeButton {
+    color:#d4a373;
+}
+form {
+    background-color:var(--flex-container-light);
 }
 
-h2 {
-    color:var(--title-color);
+ th {
+    background-color:#d4a373 !important;
 }
-
 .dark-mode {
-    --background-color: #4d4035 ;
+    --background-color: #4d4035;
     --title-color: #e8d5c4;
+    --text-color-dark-mode: #d4c4b0;
     
 }
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode label,
+.dark-mode td,
+.dark-mode th {
+    color: #4d4035;
+}
+
+.dark-mode label {
+    color: #4d4035;
+}
+

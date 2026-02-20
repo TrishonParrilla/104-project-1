@@ -19,6 +19,9 @@ $("#servicesForm").submit(function(event) {
         // alert("All fields required");
        // $("#serviceName").css("border", "solid, 2px, red");
     //}
+    if(name){
+        $("#register-button").css("background-color", "#5d8a4d")
+    }
 
     if(!name){
          $("#serviceName").css("border", "solid, 2px, red");
@@ -57,6 +60,7 @@ $("#cancel-button").click(function(event)
     $("#servicePrice").css("border","");
     $("#serviceDescription").css("border","");
     $("#serviceName").css("border","");
+    $("#register-button").css("background-color", "#d4a373")
 
 })
 //darkmode

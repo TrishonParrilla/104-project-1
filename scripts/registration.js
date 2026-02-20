@@ -66,12 +66,12 @@ let tableBody = document.getElementById("table-body");
 function displayRow(registration) {
     const tableCreate = document.createElement("tr");
     tableCreate.innerHTML += `
-                            <td scope ="row">${registration.name}</td>
-                            <td scope ="row">${registration.age}</td>
-                            <td scope ="row">${registration.service}</td>
-                            <td scope ="row">${registration.gender}</td>
-                            <td scope ="row">${registration.breed}</td>
-                            <td scope ="row"><button class="btn btn-danger type="button" onclick="deletePet()">Delete</button></td>
+                            <td scope ="row"style="background-color:#faf3eb">${registration.name}</td>
+                            <td scope ="row"style="background-color:#faf3eb">${registration.age}</td>
+                            <td scope ="row"style="background-color:#faf3eb">${registration.service}</td>
+                            <td scope ="row"style="background-color:#faf3eb">${registration.gender}</td>
+                            <td scope ="row"style="background-color:#faf3eb">${registration.breed}</td>
+                            <td scope ="row"style="background-color:#faf3eb"><button class="btn btn-danger type="button" onclick="deletePet()">Delete</button></td>
                              `;
     tableBody.appendChild(tableCreate);
 }
