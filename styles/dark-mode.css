@@ -19,6 +19,7 @@ table {
         margin-top: 3rem;
         margin-bottom: 1.5rem;
         letter-spacing: 0.05em;
+            font-family: 'Quicksand', sans-serif;
     }
 
     .dark-mode .main-welcome {
@@ -35,6 +36,7 @@ table {
     text-align: center;
     font-weight: 700;
     font-size: 2.2rem;
+        font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -114,7 +116,8 @@ form {
 
 .dark-mode form .form-label,
 .dark-mode form label {
-    color: #b8a898;
+    color: #a98c68;
+    font-weight: 700;
 }
 
 .dark-mode .form-control,
@@ -145,5 +148,33 @@ form {
 .dark-mode .registration-titles h1,
 .dark-mode .registration-titles h2 {
     color: #e8d5c4;
+}
+
+#card1 {
+    transition: 300ms ease-in-out;
+
+}
+
+#card1:hover {
+    transform: translateY(-5px);
+}
+
+#card2 {
+    transition: 300ms ease-in-out;
+
+}
+
+#card2:hover {
+    transform: translateY(-5px);
+}
+
+
+#card3 {
+    transition: 300ms ease-in-out;
+
+}
+
+#card3:hover {
+    transform: translateY(-5px);
 }
 

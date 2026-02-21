@@ -20,7 +20,7 @@ $("#servicesForm").submit(function(event) {
        // $("#serviceName").css("border", "solid, 2px, red");
     //}
     if(name){
-        $("#register-button").css("background-color", "#5d8a4d")
+        $("#register-button").css("background-color", "#5d8a4d") 
     }
 
     if(!name){
