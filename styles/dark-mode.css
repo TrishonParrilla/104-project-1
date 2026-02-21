@@ -26,6 +26,16 @@ form {
  th {
     background-color:#d4a373 !important;
 }
+
+.card {
+    background-color: #f5e6d3;
+    border-color: #d4a373;
+}
+
+.card-body {
+    background-color: #f5e6d3;
+}
+
 .dark-mode {
     --background-color: #4d4035;
     --title-color: #e8d5c4;
@@ -38,11 +48,82 @@ form {
 .dark-mode h3,
 .dark-mode label,
 .dark-mode td,
-.dark-mode th {
-    color: #4d4035;
+.dark-mode th,
+.dark-mode p,
+.dark-mode span,
+.dark-mode li,
+.dark-mode ol,
+.dark-mode .card-text,
+.dark-mode .form-label {
+    color: #e8d5c4;
 }
 
 .dark-mode label {
-    color: #4d4035;
+    color: #e8d5c4;
+}
+
+.dark-mode body,
+.dark-mode .text-body {
+    color: #e8d5c4;
+}
+
+.dark-mode .card {
+    background-color: #5d4d40;
+    border-color: #6d5d50;
+}
+
+.dark-mode .card-body {
+    background-color: #5d4d40;
+}
+
+.dark-mode .card-text {
+    color: #e8d5c4;
+}
+
+.dark-mode form {
+    background-color: #5a4d42;
+    border-color: #6d5d50;
+}
+
+.dark-mode form .form-label,
+.dark-mode form label {
+    color: #b8a898;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+    background-color: #f5e6d3;
+    border-color: #6d5d50;
+    color: #3d3028;
+}
+
+.dark-mode .form-control:focus,
+.dark-mode .form-select:focus {
+    background-color: #f5e6d3;
+    border-color: #d4a373;
+    color: #3d3028;
+    box-shadow: 0 0 0 0.25rem rgba(212, 163, 115, 0.25);
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+    color: #e8d5c4 !important;
+}
+
+.dark-mode .table {
+    color: #e8d5c4;
+}
+
+.dark-mode .card-title {
+    color: #e8d5c4;
+}
+
+.dark-mode h5 {
+    color: #e8d5c4;
+}
+
+.dark-mode .registration-titles h1,
+.dark-mode .registration-titles h2 {
+    color: #e8d5c4;
 }
 
