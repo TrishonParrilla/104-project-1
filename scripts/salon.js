@@ -12,4 +12,10 @@ function displaySalonInfo() {       //display about info to html function
     salonInfo.innerHTML = `Welcome to ${salon.name} You can find us at ${salon.address}! We're open ${salon.hours}. You can contact us at ${salon.phone} `
     aboutUsSection.appendChild(salonInfo);
 }
-displaySalonInfo();
+
+function displayContactInfo() {       //display contact info in Contact Us card
+    document.getElementById("salon-phone").textContent = salon.phone;
+    document.getElementById("salon-address").textContent = salon.address;
+    document.getElementById("salon-hours").textContent = salon.hours;
+}
+displayContactInfo();
