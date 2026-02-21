@@ -59,6 +59,9 @@ form {
 .card {
     background-color: #f5e6d3;
     border-color: #d4a373;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px black;
 }
 
 .card-body {
@@ -152,11 +155,17 @@ form {
 
 #card1 {
     transition: 300ms ease-in-out;
+    
 
 }
 
 #card1:hover {
     transform: translateY(-5px);
+    box-shadow:8px 8px 24px 0 rgba(0,0,0,0.35) inset, 0 4px 16px 0 rgba(0,0,0,0.25);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 #card2 {
@@ -166,6 +175,11 @@ form {
 
 #card2:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.35) inset, 0 4px 16px 0 rgba(0,0,0,0.25);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 
@@ -176,5 +190,10 @@ form {
 
 #card3:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.35) inset, 0 4px 16px 0 rgba(0,0,0,0.25);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
