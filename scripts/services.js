@@ -4,6 +4,11 @@ function Service(name, description, price){
     this.price = price;
 }
 
+let savedService = JSON.parse(localStorage.getItem('service'));
+if(savedService) {
+    console.log("Loaded from storage:", savedService);
+}
+
 $("#servicesForm").submit(function(event) {
     event.preventDefault();
     console.log(event);
@@ -48,14 +53,13 @@ $("#servicesForm").submit(function(event) {
 
     }
     
-    // Only save if all fields are valid
+    // if all fields are valid
     if(name && description && price) {
         let service1 = new Service(name, description, price);
         localStorage.setItem('service', JSON.stringify(service1));
         console.log(service1);
         this.reset();
     }
-
 
 });
 
