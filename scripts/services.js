@@ -47,9 +47,14 @@ $("#servicesForm").submit(function(event) {
         $("#servicePrice").css("border","");
 
     }
-    this.reset();
-    let service1 = new Service(name, description, price);
-    console.log(service1)
+    
+    // Only save if all fields are valid
+    if(name && description && price) {
+        let service1 = new Service(name, description, price);
+        localStorage.setItem('service', JSON.stringify(service1));
+        console.log(service1);
+        this.reset();
+    }
 
 
 });
